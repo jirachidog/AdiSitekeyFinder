@@ -29,6 +29,8 @@ class alldayidreamaboutsleeping:
             url = url.replace('.com', '.co.uk')
         elif self.region == 'AU':
             url = url.replace('.com', '.com.au')
+        elif self.region == 'CA':
+            url = url.replace('.com', '.ca')
         else:
             url = url.replace('.com', '.' + region.lower())
             url = url.replace('en-' + region.lower(), region.lower() + '-' + region.lower())
