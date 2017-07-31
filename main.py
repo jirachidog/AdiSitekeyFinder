@@ -76,17 +76,16 @@ class alldayidreamaboutsleeping:
                 sitekey = new.find('div', {'class':'g-recaptcha'})['data-sitekey']
                 self.sitekey = str(sitekey)
                 self.foundlist.append(str(crawlurl))
-                log('Sitekey Found', 'green')
-                log('URL : ' + crawlurl, 'green')
-                log('Sitekey : ' + sitekey, 'green')
+                self.done()
+                break
             except:
                 pass
 
             count = count + 1
 
     def done(self):
-        log('Sitekey = {}'.format(self.sitekey), 'rain')
-        log('Found Key on Sites : ', 'green')
+        log('Sitekey = {}'.format(self.sitekey), 'green')
+        log('Found Key on URL : ', 'green')
         for item in self.foundlist:
             log(item, 'green')
 
@@ -96,4 +95,3 @@ region = log('Enter Region to Search (EG: US, AU, GB) : ', 'input')
 
 s = alldayidreamaboutsleeping(region, delay)
 s.sitemap()
-s.done()
