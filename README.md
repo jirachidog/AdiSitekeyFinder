@@ -8,3 +8,5 @@ pip3 install lxml requests bs4
 
 python3 main.py
 
+Script will then run through all products on that region's site and search for sitekey on each individual page.
+
