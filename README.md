@@ -1,6 +1,6 @@
 # Adidas Sitekey Fetcher
 ## Created by @Cosm00_
-## Supported Domains: FR, US, GB, AU
+## Supported Domains: FR, US, GB, AU, CA
 ###### More might work, haven't tested them all
 
 ## To Use:
